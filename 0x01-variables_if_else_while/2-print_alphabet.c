@@ -2,13 +2,13 @@
 
 /**
  * main - this is real
- * Return: 0 for successful exit 
+ * Return: 0 for successful exit
  */
 int main(void)
 {
 char str[27] = "abcdefghijklmnopqrstuvwxyz";
-int i =0;
-while (i<26)
+int i = 0;
+while (i < 26)
 {
 putchar(str[i]);
 i++;
