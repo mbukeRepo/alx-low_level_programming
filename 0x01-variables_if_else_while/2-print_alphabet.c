@@ -8,7 +8,7 @@ int main(void)
 {
 char str[27] = "abcdefghijklmnopqrstuvwxyz";
 int i =0;
-while (i<27)
+while (i<26)
 {
 putchar(str[i]);
 i++;
