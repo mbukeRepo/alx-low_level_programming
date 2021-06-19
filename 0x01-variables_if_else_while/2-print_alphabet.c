@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-char str[5] = "this";
+char str[5] = "abcdefghijklmnopqrstuvwxyz";
 int i =0;
 while (i<5)
 {
