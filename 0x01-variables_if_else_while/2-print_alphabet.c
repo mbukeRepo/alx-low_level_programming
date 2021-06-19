@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-char str[5] = "abcdefghijklmnopqrstuvwxyz";
+char str[27] = "abcdefghijklmnopqrstuvwxyz";
 int i =0;
-while (i<5)
+while (i<27)
 {
 putchar(str[i]);
 i++;
