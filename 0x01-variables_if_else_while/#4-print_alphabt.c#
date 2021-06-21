@@ -1,0 +1,14 @@
+#include <stdio.h>
+/**
+ * main - does stuff
+ * Return: return 0 for success
+ */
+int main(void)
+{
+char str[26] = "abcdefghijklmnopqrstuvwxyz";
+int i = 0;
+while (i < 26)
+{
+
+}
+}
