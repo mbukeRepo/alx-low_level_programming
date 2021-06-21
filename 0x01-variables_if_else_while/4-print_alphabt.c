@@ -1,7 +1,7 @@
 #include <stdio.h>
-/**                                                                                                                                                                     
- * main - does stuff                                                                                                                                                    
- * Return: return 0 for success                                                                                                                                         
+/**
+ * main - does stuff
+ * Return:  0 for success
  */
 int main(void)
 {
