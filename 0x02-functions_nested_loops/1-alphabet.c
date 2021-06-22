@@ -1,11 +1,16 @@
 #include "holberton.h"
-/**
- *main - hello
- *Return: 0 for success
- */
-int main(void)
-{
-print_alphabet();
-return (0);
-}
 
+/**
+  * print_alphabet - printing
+  * Return - nothing
+  */
+void print_alphabet(void)
+{
+char alpha = 'a';
+while (alpha < 'z')
+{
+_putchar(alpha);
+alpha++;
+}
+_putchar('\n');
+}
