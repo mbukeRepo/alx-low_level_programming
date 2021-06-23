@@ -1,12 +1,12 @@
 #include "holberton.h"
 /**
  * print_sign - does stuff
- * @n: number 
+ * @n: number
  * Return: returns 1 and 0
  */
 int print_sign(int n)
 {
-if (n>0)
+if (n > 0)
 {
 _putchar('+');
 return (1);
