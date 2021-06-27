@@ -6,31 +6,26 @@
 int main(void)
 {
 int i = 0;
-int j, k, l;
+int j, k;
 while (i <= 9)
 {
 j = 0;
-while (j <= 8)
+while (j <= 9)
 {
-k = ((i * 10) + j + 1) / 10;
-while (k <= 9)
-{
-l = ((i * 10) + j + 1) % 10;
-while (l <= 9)
+k = (i * 10 + j) +1;
+while (k <= 99)
 {
 putchar(i + '0');
 putchar(j + '0');
 putchar(' ');
-putchar(k + '0');
-putchar(l + '0');
-if (i == 9 && j == 8 && k == 9 && l == 9)
+putchar((k / 10) + '0');
+putchar((k % 10) + '0');
+if (i == 9 && j == 8)
 {
 break;
 }
 putchar(',');
 putchar(' ');
-l++;
-}
 k++;
 }
 j++;
