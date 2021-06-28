@@ -11,7 +11,7 @@ void puts2(char *str)
 size_t i = 0;
 while (i < strlen(str))
 {
-if (str[i] % 2 == 0)
+if (i % 2 == 0)
 {
 _putchar(str[i]);
 }
