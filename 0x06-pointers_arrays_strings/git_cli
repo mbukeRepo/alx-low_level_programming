@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m "this is the end "
+git push origin main
