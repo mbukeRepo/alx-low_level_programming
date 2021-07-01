@@ -6,31 +6,20 @@
  */
 char *leet(char *str)
 {
+char char_to_encode[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+char keys[] = {'4', '3', '0', '7', '1'};
 int str_len = strlen(str);
-int i = 0;
-while (i < str_len)
+int i;
+int j;
+for (i = 0; i < str_len; i++)
 {
-if (str[i] == 'a' || str[i] == 'A')
+for (j = 0; j < 10; j = j + 2)
 {
-str[i] = '4';
+if (str[i] == char_to_encode[j] || str[i] == char_to_encode[j + 1])
+{
+str[i] = keys[j / 2];
 }
-if (str[i] == 'e' || str[i] == 'E')
-{
-str[i] = '3';
 }
-if (str[i] == 'o' || str[i] == 'O')
-{
-str[i] = '0';
-}
-if (str[i] == 't' || str[i] == 'T')
-{
-str[i] = '7';
-}
-if (str[i] == 'l' || str[i] == 'L')
-{
-str[i] = '1';
-}
-i++;
 }
 return (str);
 }
