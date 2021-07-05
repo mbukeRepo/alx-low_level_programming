@@ -28,5 +28,5 @@ j++;
 }
 i++;
 }
-printf("%d %d\n", sumOfPD, sumOfMD);
+printf("%d, %d\n", sumOfPD, sumOfMD);
 }
