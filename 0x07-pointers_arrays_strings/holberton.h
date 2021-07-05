@@ -5,3 +5,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 int _putchar(char c);
 char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);
