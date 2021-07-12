@@ -11,7 +11,7 @@
  */
 int main(int argc, char **argv)
 {
-long int sum = 0;
+int sum = 0;
 int i = 1;
 char *p;
 if (argc == 1)
@@ -26,7 +26,8 @@ return (1);
 }
 while (i < argc)
 {
-sum += strtol(argv[i], &p, 10);
+strtol(argv[i], &p, 10);
+sum += atoi(argv[i]);
 if (*p)
 {
 printf("Error\n");
@@ -34,8 +35,7 @@ return (1);
 }
 i++;
 }
-
-printf("%s\n", p);
-printf("%ld\n", sum);
+printf("%d\n", sum);
 return (0);
 }
+
