@@ -1,0 +1,1 @@
+this is a bout dynamic memory allocation
