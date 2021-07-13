@@ -15,7 +15,7 @@ if (str == NULL)
 return (ptr);
 }
 len = strlen(str);
-ptr = malloc(len *sizeof(char));
+ptr = malloc((len + 1) * sizeof(char));
 if (ptr == NULL)
 {
 return (NULL);
