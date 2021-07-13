@@ -12,7 +12,7 @@ char *ptr = NULL;
 if (size != 0)
 {
 ptr = malloc(size * sizeof(char));
-if (NULL == (ptr = malloc(size * sizeof(char))))
+if (ptr == NULL)
 {
 return (NULL);
 }
