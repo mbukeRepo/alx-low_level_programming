@@ -1,1 +1,1 @@
-Hello c programmers
+this is about creating static library
