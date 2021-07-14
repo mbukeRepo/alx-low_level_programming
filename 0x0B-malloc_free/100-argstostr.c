@@ -31,6 +31,7 @@ k++;
 }
 i++;
 }
+newstr[k] = '\0';
 return (newstr);
 }
 /**
@@ -54,7 +55,7 @@ while (i < ac)
 newlen += strlen(av[i]) + 1;
 i++;
 }
-newstr = (char *)malloc(newlen *sizeof(char));
+newstr = (char *)malloc((newlen + 1) *sizeof(char));
 if (newstr == NULL)
 {
 free(newstr);
