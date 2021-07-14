@@ -17,7 +17,7 @@ return (NULL);
 i = 0;
 while (i < height)
 {
-p[i]= (int *)malloc(sizeof(int) * width);
+p[i] = (int *)malloc(sizeof(int) * width);
 if (p[i] == NULL)
 {
 return (NULL);
