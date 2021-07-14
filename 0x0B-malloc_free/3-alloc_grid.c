@@ -24,6 +24,11 @@ while (i < height)
 p[i] = (int *)malloc(sizeof(int) * width);
 if (p[i] == NULL)
 {
+while (i >= 0)
+{
+free(p[i]);
+i--;
+}
 free(p);
 return (NULL);
 }
