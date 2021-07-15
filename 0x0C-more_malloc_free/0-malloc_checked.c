@@ -11,6 +11,7 @@ void *s;
 s = malloc(b);
 if (!s)
 {
+free(s);
 exit(98);
 }
 return (s);
