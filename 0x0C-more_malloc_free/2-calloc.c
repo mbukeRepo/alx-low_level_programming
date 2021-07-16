@@ -16,6 +16,7 @@ return (NULL);
 newArray = malloc(nmemb * size);
 if (newArray == NULL)
 {
+exit(98);
 return (NULL);
 }
 newArray = memset(newArray, 0, nmemb);
