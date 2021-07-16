@@ -64,7 +64,7 @@ if (s1 != NULL)
 dest_len = strlen(s1);
 }
 
-if (s2 != NULL && n > strlen(s2))
+if (s2 != NULL && n >= strlen(s2))
 {
 n = strlen(s2);
 }
