@@ -78,6 +78,7 @@ newlen = 1;
 newstr = malloc(newlen *sizeof(char));
 if (newstr == NULL)
 {
+free(newstr);
 return (NULL);
 }
 return (sup(s1, s2, newstr, dest_len, newlen, n));
