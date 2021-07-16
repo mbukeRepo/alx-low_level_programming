@@ -9,16 +9,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *newArray;
-if (nmemb == 0 || size == 0)
-{
-return (NULL);
-}
-newArray = malloc(nmemb * size);
-if (newArray == NULL)
-{
-exit(98);
-return (NULL);
-}
-newArray = memset(newArray, 0, nmemb);
+newArray = calloc(nmemb, size);
 return (newArray);
 }
