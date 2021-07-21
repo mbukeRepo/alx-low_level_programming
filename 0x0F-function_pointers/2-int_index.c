@@ -1,3 +1,10 @@
+/**
+ * int_index - does stuff
+ * @array: array
+ * @size:: size of the array
+ * @cmp: pointer to array
+ * Return: int
+ */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 int i = 0;
