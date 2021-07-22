@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
-#include <strarg.h>
+#include <stdarg.h>
+#include <stdio.h>
 /**
  * print_int - printer
  * @args: arguments
