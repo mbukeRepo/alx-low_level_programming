@@ -55,6 +55,8 @@ printf("%s", s);
 /**
  * print_all - printing all types
  * @format: format specifier
+ * @...: arguments
+ *  Description: does stuff
  */
 
 void print_all(const char * const format, ...)
