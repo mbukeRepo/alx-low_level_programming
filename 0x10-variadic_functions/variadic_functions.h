@@ -9,9 +9,10 @@
  * @type: symbol
  * @print_type: printing
  */
-struct printable{
-  char type;
-  void (*print_type)(va_list args);
+struct printable
+{
+char type;
+void (*print_type)(va_list args);
 };
 typedef struct printable print_t;
 void print_all(const char * const format, ...);
