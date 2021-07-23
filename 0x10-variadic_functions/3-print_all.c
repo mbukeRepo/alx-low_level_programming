@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+
 void print_char(va_list arg);
 void print_int(va_list arg);
 void print_float(va_list arg);
@@ -83,12 +84,9 @@ j++;
 }
 if (j < 4)
 {
-if (format[i] == print_args[j].type)
-{
 printf("%s", separator);
 print_args[j].print_type(args);
 separator = ", ";
-}
 }
 i++;
 }
