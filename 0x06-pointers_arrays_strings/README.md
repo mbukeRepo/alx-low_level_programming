@@ -1,0 +1,1 @@
+more to tstrings and pointers
