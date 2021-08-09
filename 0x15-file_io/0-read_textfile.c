@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * read_textfile - reads file and output the chars on stdout
+ * @filename: name of the file to read
+ * @letters: number of the letters to read
+ * Return: the characters output to the stdout
+ */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 ssize_t o, r, w;
