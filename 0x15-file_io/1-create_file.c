@@ -1,3 +1,5 @@
+#include "main.h"
+#include "holberton.h"
 /**
  * create_file - creates a file and fills it with content
  * @filename: is the filename of the file to create
