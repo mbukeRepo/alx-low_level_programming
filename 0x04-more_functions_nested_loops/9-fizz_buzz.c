@@ -5,22 +5,19 @@
  */
 int main(void)
 {
-int i = 1;
-while (i <= 100)
+int num;
+for (num = 1; num <= 100; num++)
 {
-if (i % 3 == 0)
-{
+if (((num % 3) == 0) && ((num % 5) == 0))
+printf("FizzBuzz");
+else if ((num % 3) == 0)
 printf("Fizz");
-}
-if (i % 5 == 0)
-{
+else if ((num % 5) == 0)
 printf("Buzz");
-}
-if (i % 3 != 0 && i % 5 != 0)
-{
-printf("%d", i);
-}
-i++;
+else
+printf("%d", num);
+if (num == 100)
+continue;
 printf(" ");
 }
 printf("\n");
