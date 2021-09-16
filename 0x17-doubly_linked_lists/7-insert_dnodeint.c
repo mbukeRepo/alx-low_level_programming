@@ -17,7 +17,7 @@ while (idx != 1)
 {
 tmp = tmp->next;
 if (tmp == NULL)
-return (NULL);
+return (NULL); 
 idx--;
 }
 
@@ -27,12 +27,13 @@ return (add_dnodeint_end(h, n));
 }
 
 new = malloc(sizeof(dlistint_t));
-if (!new)
+if (new == NULL)
 return (NULL);
 new->n = n;
-new->next = tmp->next;
-tmp->next = new;
-tmp->next->prev = new;
 new->prev = tmp;
+new->next = tmp->next;
+tmp->next->prev = new;
+tmp->next = new;
+
 return (new);
 }
