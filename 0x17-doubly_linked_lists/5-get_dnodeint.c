@@ -11,7 +11,7 @@ dlistint_t *curr = head;
 while (index != 0)
 {
 if (curr == NULL)
-return (NULL)
+return (NULL);
 curr = curr->next;
 index--;
 }
