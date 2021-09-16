@@ -17,7 +17,7 @@ while (idx != 1)
 {
 tmp = tmp->next;
 if (tmp == NULL)
-return (NULL); 
+return (NULL);
 idx--;
 }
 
