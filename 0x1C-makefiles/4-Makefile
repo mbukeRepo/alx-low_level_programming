@@ -6,10 +6,10 @@ RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o school
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 clean:
-	$(RM) *~
+	$(RM) *~ $(NAME)
 oclean:
-	$(RM) *.o
+	$(RM) $(OBJ)
 fclean: clean oclean
 re: fclean all
